@@ -1,2 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    height: 100%;
+    /*setting this explicitly is important*/
+    display: flex;
+    /*flex superpowers activated! */
+    flex-direction: column;
+    /*Stack the flex-items (main and footer elements) vertically NOT horizontally*/
+    background-color: #ededed;
+    margin: 0;
+    color: #222;
+  }
+
+footer {
+    flex: 0 0 90px;
+    padding: 10px;
+    color: #454449;
+    background-color: #E4E1F1;
+  }
+main {
+flex: 1 0 auto;
+/*Is a flex item*/
+   display: flex;
+   flex-direction: column;
+/*I just included this! - now a flex container with flex items: sidebar & main content section*/
+}
+
+.topNavigation{
+background-color: #1d4086;
+flex: 0 0 15px;
+}
+.topNavigation>ul{
+display: flex;
+justify-content: flex-end;
+align-items:center;
+
+}
+.topNavigation ul li {
+    list-style: none;
+}
+.topNavigation ul li a{
+    font-size: 13px;
+    padding: 3px 5px 0 5px;
+    color: #FFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 5px;
+   
+}    
+content{
+    
+}

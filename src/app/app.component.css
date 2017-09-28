@@ -134,5 +134,96 @@ html, body {
       min-height:100vh;
 }
 
+.main-carousal-row{
+
+  display: flex;
+  flex-wrap: nowrap
+}
+
+.main-carousal-col-1{
+background: black;
+width: 5%;
+}
+.main-carousal-col-2{
+  
+  width: 90%;
+  }
+  .main-carousal-col-3{
+    background-color: black;
+    width: 5%;
+    
+    }
 
 
+    .sub-content-row{
+      display: flex;
+    }
+    .sub-content-col-1{
+      width: 4%;
+      background: transparent;
+    }
+    .sub-content-col-2{
+      width: 92%;
+      background: green;
+      
+      margin: 1%;
+    }
+    .sub-content-col-3{
+      width: 4%;
+      background: transparent;
+    }
+
+    .tour-detail-row{
+      display: flex;
+      background-color: #817AE2;
+    }
+
+    .tour-detail-row div:nth-child(1) {
+      background-color: red; /*give it a value higher than 0*/
+      width: 40%;
+    }
+
+    .tour-detail-row div:nth-child(2) {
+      background-color: yellow; /*give it a value higher than 0*/
+      width: 30%;
+    }
+
+    .tour-detail-row div:nth-child(3) {
+      background-color: magenta; /*give it a value higher than 0*/
+      width: 30%;
+    }
+
+    .tour-detail-row .sub-div1{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tour-detail-row .sub-div1  div:nth-child(1){
+height: 50%;
+width: 100%;
+background-color: #8bc34a;
+margin: 0 0 5% 0;
+    }
+
+    .tour-detail-row .sub-div1  div:nth-child(2){
+      height: 50%;
+      width: 100%;
+      background-color: #b08752;
+    }
+
+    .tour-detail-row .sub-div2{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tour-detail-row .sub-div2 div:nth-child(1){
+     
+      height: 50%;
+      width: 100%;
+      margin: 0 0 5% 0;
+    }
+
+    .tour-detail-row .sub-div2 div:nth-child(2){
+      height: 50%;
+      width: 100%;
+    }
