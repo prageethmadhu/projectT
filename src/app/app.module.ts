@@ -11,6 +11,10 @@ import { SubCarouselComponent } from './sub-carousel/sub-carousel.component';
 import { TourDetailComponent } from './tour-detail/tour-detail.component';
 import { RouterModule }   from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { NewsEventComponent } from './news-event/news-event.component';
+import { TourTestimonialComponent } from './tour-testimonial/tour-testimonial.component';
+import { FreequentlyAskQuestionsComponent } from './freequently-ask-questions/freequently-ask-questions.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 
@@ -22,7 +26,11 @@ import { AboutUsComponent } from './about-us/about-us.component';
     MainCarousalComponent,
     SubCarouselComponent,
     TourDetailComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    NewsEventComponent,
+    TourTestimonialComponent,
+    FreequentlyAskQuestionsComponent,
+    ContactUsComponent
     
   ],
   imports: [
@@ -32,8 +40,24 @@ import { AboutUsComponent } from './about-us/about-us.component';
     FlexLayoutModule,
     NgbModule.forRoot(),RouterModule.forRoot([
       {
+        path: 'contact',
+        component: ContactUsComponent
+      },
+      {
+        path: 'faq',
+        component: FreequentlyAskQuestionsComponent
+      },
+      {
+        path: 'news-events',
+        component: NewsEventComponent
+      },
+      {
         path: 'about',
         component: AboutUsComponent
+      },
+      {
+        path: 'testimonials',
+        component: TourTestimonialComponent
       }
       ,{
         path: 'tour',
