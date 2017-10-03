@@ -9,6 +9,11 @@ import { MainCarousalComponent } from './main-carousal/main-carousal.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SubCarouselComponent } from './sub-carousel/sub-carousel.component';
 import { TourDetailComponent } from './tour-detail/tour-detail.component';
+import { RouterModule }   from '@angular/router';
+import { AboutUsComponent } from './about-us/about-us.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +21,8 @@ import { TourDetailComponent } from './tour-detail/tour-detail.component';
     TopNavigationComponent,
     MainCarousalComponent,
     SubCarouselComponent,
-    TourDetailComponent
+    TourDetailComponent,
+    AboutUsComponent
     
   ],
   imports: [
@@ -24,7 +30,21 @@ import { TourDetailComponent } from './tour-detail/tour-detail.component';
     FormsModule,
     HttpModule,
     FlexLayoutModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),RouterModule.forRoot([
+      {
+        path: 'about',
+        component: AboutUsComponent
+      }
+      ,{
+        path: 'tour',
+        component: TourDetailComponent
+      },
+      {
+        path: '',
+        redirectTo: '/tour',
+        pathMatch: 'full'
+      },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
