@@ -8,14 +8,15 @@ import { TopNavigationComponent } from './top-navigation/top-navigation.componen
 import { MainCarousalComponent } from './main-carousal/main-carousal.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SubCarouselComponent } from './sub-carousel/sub-carousel.component';
-
+import { TourDetailComponent } from './tour-detail/tour-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavigationComponent,
     MainCarousalComponent,
-    SubCarouselComponent
+    SubCarouselComponent,
+    TourDetailComponent
     
   ],
   imports: [
