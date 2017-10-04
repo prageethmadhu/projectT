@@ -34,3 +34,7 @@
     margin-top: 20px;
     border-color: #7E5390;
 }
+
+.panel-default>.panel-heading{
+    background-color: cornsilk;
+}
