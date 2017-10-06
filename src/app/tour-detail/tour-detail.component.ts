@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-tour-detail',
@@ -11,5 +12,5 @@ export class TourDetailComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  imagePath= environment.imgPath
 }
