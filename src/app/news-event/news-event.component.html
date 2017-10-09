@@ -2,17 +2,17 @@
   <div class="sub-main-carousal-col-1"></div>
   <div class="sub-main-carousal-col-2" style="display:flex;flex-direction: column;">
     <h1 class="sub-main-headding">NEWS AND EVENTS</h1>
-    <div style="display:flex ; flex-wrap: wrap;">
+    <div style="display:flex ; flex-wrap: wrap;" >
 
-      <div *ngFor="let news of newsList">
-
-        <div style="margin:2% ;width: 315px">
-          <img src="{{imagePath}}c4.jpg" alt="New York">
-          <div>{{news.discription}}</div>
+    
+        <div style="display:flex ;width: 50%;padding:1%" *ngFor="let news of newsList">
+        
+          <img src="{{imagePath}}{{news.path}}" alt="New York" style="width: 50%;height:100%;">
+          <div style="width: 50%;height:100%;padding-left:1%">{{news.discription}}</div>
 
         </div>
 
-      </div>
+      
 
 
     </div>
