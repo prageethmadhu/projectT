@@ -15,7 +15,8 @@ import { NewsEventComponent } from './news-event/news-event.component';
 import { TourTestimonialComponent } from './tour-testimonial/tour-testimonial.component';
 import { FreequentlyAskQuestionsComponent } from './freequently-ask-questions/freequently-ask-questions.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-
+// Import HttpClientModule from @angular/common/http
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     HttpModule,
     FlexLayoutModule,

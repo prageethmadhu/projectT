@@ -3,6 +3,8 @@ import { environment } from '../../environments/environment';
 
 import { News } from '../news';
 import { NewsService } from '../news.service';
+import {HttpClient} from '@angular/common/http';
+
 
 @Component({
   selector: 'app-news-event',
@@ -12,8 +14,8 @@ import { NewsService } from '../news.service';
 })
 export class NewsEventComponent implements OnInit {
   newsList: News[];
-  
-  constructor(private newsService: NewsService) { }
+  results:any;
+  constructor(private newsService: NewsService,private http: HttpClient) { }
 
   imagePath= environment.imgPath
 
@@ -23,5 +25,10 @@ export class NewsEventComponent implements OnInit {
  
   ngOnInit(): void {
     this.getHeroes();
+
+    this.http.get('http://localhost:3000/tasks').subscribe(data => {
+      // Read the result field from the JSON response.
+      this.results = data;
+    });
   }
 }
